@@ -267,16 +267,15 @@ If you want to build the CNTK Evaluation Library for UWP you need to follow the 
 
 ### CNTK Python environments
 
-CNTK supports Python 2.7, Python 3.4, Python 3.5 and Python 3.6. We recommend you create a dedicated environment in your Python installation to work with CNTK. This way CNTK and the installed supporting packages won't impact any other Python project. We provide several files (`yml`-files) containing the description of required Python packages. The packages are located in the `scripts\install\windows` directory inside your CNTK clone. Please select the file matching your targeted Python version.
+CNTK supports Python 2.7, Python 3.5 and Python 3.6. We recommend you create a dedicated environment in your Python installation to work with CNTK. This way CNTK and the installed supporting packages won't impact any other Python project. We provide several files (`yml`-files) containing the description of required Python packages. The packages are located in the `scripts\install\windows` directory inside your CNTK clone. Please select the file matching your targeted Python version.
 
 |Python version | Filename |
 |:--------|:------------|
 |Python 2.7 | conda-windows-cntk-py27-environment.yml
-|Python 3.4 | conda-windows-cntk-py34-environment.yml
 |Python 3.5 | conda-windows-cntk-py35-environment.yml
 |Python 3.6 | conda-windows-cntk-py36-environment.yml
 
-As an example we create a Python 3.5 environment in an environment named `cntk-py35`. If you want a different environment name, please adjust the following steps accordingly. If you want to create a Python 2.7, Python 3.4, or Python 3.6 environment, please adjust the name of the YML to match the Python version you intend to use.
+As an example we create a Python 3.5 environment in an environment named `cntk-py35`. If you want a different environment name, please adjust the following steps accordingly. If you want to create a Python 2.7 or Python 3.6 environment, please adjust the name of the YML to match the Python version you intend to use.
 
 The following assumes you cloned the CNTK source code from GitHub into the directory `c:\repos\cntk`.
 
@@ -307,7 +306,6 @@ Set up build environment variables for your Python environment (choose at least 
 ```
     setx CNTK_PY36_PATH [paths for your Python 3.6 environment]
     setx CNTK_PY35_PATH [paths for your Python 3.5 environment]
-    setx CNTK_PY34_PATH [paths for your Python 3.4 environment]
     setx CNTK_PY27_PATH [paths for your Python 2.7 environment]
 ```
 
@@ -317,7 +315,7 @@ If you followed the installation so far, this would mean
     setx CNTK_PY35_PATH C:\local\Anaconda3-4.1.1-Windows-x86_64\envs\cntk-py35
 ```
 
-The value for the `CNTK_PY36_PATH`, `CNTK_PY35_PATH`, `CNTK_PY34_PATH`, or `CNTK_PY27_PATH` environment variables can be determined by running in
+The value for the `CNTK_PY36_PATH`, `CNTK_PY35_PATH`, or `CNTK_PY27_PATH` environment variables can be determined by running in
 `conda ..activate cmd.exe [name-or-path-of-your-environment]`
 
 #### PYTHONPATH

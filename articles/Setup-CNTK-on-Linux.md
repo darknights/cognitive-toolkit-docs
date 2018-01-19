@@ -459,31 +459,18 @@ This section describes how to build CNTK v2 with Python support.
 
 * Install the [SWIG tool](#optional-swig) if you have not done so yet.
 * Install [Anaconda3 4.1.1 (64-bit)](https://repo.continuum.io/archive/Anaconda3-4.1.1-Linux-x86_64.sh)
-* If you already have a CNTK Python environment (called `cntk-py36`, `cntk-py35`, `cntk-py34`, or `cntk-py27`) you can update it with the latest required packages with the following commands:
+* If you already have a CNTK Python environment (called `cntk-py36`, `cntk-py35`, or `cntk-py27`) you can update it with the latest required packages with the following commands:
 
 ```
 # For cntk-py36:
 conda env update --file [CNTK clone root]/Scripts/install/linux/conda-linux-cntk-py36-environment.yml --name cntk-py36
 # For cntk-py35:
 conda env update --file [CNTK clone root]/Scripts/install/linux/conda-linux-cntk-py35-environment.yml --name cntk-py35
-# For cntk-py34:
-conda env update --file [CNTK clone root]/Scripts/install/linux/conda-linux-cntk-py34-environment.yml --name cntk-py34
 # For cntk-py27:
 conda env update --file [CNTK clone root]/Scripts/install/linux/conda-linux-cntk-py27-environment.yml --name cntk-py27
 ```
 
-* If you already have a CNTK Python environment (called `cntk-py35`, `cntk-py34`, or `cntk-py27`) you can update it with the latest required packages with the following commands:
-
-```
-# For cntk-py35:
-conda env update --file [CNTK clone root]/Scripts/install/linux/conda-linux-cntk-py35-environment.yml --name cntk-py35
-# For cntk-py34:
-conda env update --file [CNTK clone root]/Scripts/install/linux/conda-linux-cntk-py34-environment.yml --name cntk-py34
-# For cntk-py27:
-conda env update --file [CNTK clone root]/Scripts/install/linux/conda-linux-cntk-py27-environment.yml --name cntk-py27
-```
-
-* If you do not have a CNTK Python environment yet, you may choose between a Python 2.7, 3.4, or 3.5 based CNTK Python environment.
+* If you do not have a CNTK Python environment yet, you may choose between a Python 2.7, 3.5 or 3.6 based CNTK Python environment.
 * Create your Python environment of choice in your existing Python 3.5 Anaconda or Miniconda installation using *one* of the following commands, depending on your desired Python version:
 
 ```
@@ -491,8 +478,6 @@ conda env update --file [CNTK clone root]/Scripts/install/linux/conda-linux-cntk
 conda env create --file [CNTK clone root]/Scripts/install/linux/conda-linux-cntk-py36-environment.yml
 # For a Python 3.5 based version:
 conda env create --file [CNTK clone root]/Scripts/install/linux/conda-linux-cntk-py35-environment.yml
-# For a Python 3.4 based version:
-conda env create --file [CNTK clone root]/Scripts/install/linux/conda-linux-cntk-py34-environment.yml
 # For a Python 2.7 based version:
 conda env create --file [CNTK clone root]/Scripts/install/linux/conda-linux-cntk-py27-environment.yml
 ```
@@ -504,7 +489,7 @@ For example, if you have Python 3.5 based environment called `cntk-py35` run thi
 source activate cntk-py35
 ```
 
-Similarly, for a Python 3.6, 3.4, or 2.7 based environment.
+Similarly, for a Python 3.6, or 2.7 based environment.
 
 **Step 2**: Uninstall previous CNTK package
 
@@ -523,7 +508,6 @@ and *one* of the following (whatever applies to your environment):
 ```
 --with-py36-path[=directory]
 --with-py35-path[=directory]
---with-py34-path[=directory]
 --with-py27-path[=directory]
 ```
 

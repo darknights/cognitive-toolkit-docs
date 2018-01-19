@@ -50,7 +50,6 @@ There are several additional environment variables which can be used to define t
 |CNTK_ENABLE_ASGD  | true | [Data Parallel ASGD](./Setup-CNTK-on-Windows.md#enlisting-in-the-cntk-github-repository)
 |CNTK_ENABLE_1BITSGD | false | [1bit SGD](./Enabling-1bit-SGD.md)
 |CNTK_PY27_PATH |  | [Path to the CNTK Python 2.7 environment](./Setup-CNTK-on-Windows.md#cntk-python-environments)
-|CNTK_PY34_PATH |  | [Path to the CNTK Python 3.4 environment](./Setup-CNTK-on-Windows.md#cntk-python-environments)
 |CNTK_PY35_PATH |  | [Path to the CNTK Python 3.5 environment](./Setup-CNTK-on-Windows.md#cntk-python-environments)
 |CNTK_PY36_PATH |  | [Path to the CNTK Python 3.6 environment](./Setup-CNTK-on-Windows.md#cntk-python-environments)
 
